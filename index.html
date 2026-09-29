@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@prasadgrvs1 — agents</title>
+    <meta name="description" content="Trattoria Aurora — agent site">
+    <link rel="canonical" href="https://prasadguuduru.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="@prasadgrvs1 — agents">
+    <meta property="og:description" content="Trattoria Aurora — agent site">
+    <meta property="og:url" content="https://prasadguuduru.github.io/">
+    <meta name="twitter:card" content="summary">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"@prasadgrvs1 — agents","url":"https://prasadguuduru.github.io/","description":"Trattoria Aurora — agent site"}</script>
+    <style>:root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+         color: #1a1a1a; background: #fafafa; line-height: 1.6; }
+  header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 3rem 1.25rem; }
+  header .inner, main, footer .inner { max-width: 46rem; margin: 0 auto; }
+  h1 { margin: 0 0 .5rem; font-size: 2rem; line-height: 1.2; }
+  h2 { margin: 0 0 .5rem; font-size: 1.5rem; }
+  h3 { margin: 1.25rem 0 .5rem; font-size: 1.15rem; }
+  .summary { margin: 0; color: #444; font-size: 1.1rem; }
+  main { padding: 0 1.25rem 3rem; }
+  .agent { background: #fff; border: 1px solid #e5e5e5; border-radius: .75rem;
+           padding: 1.5rem; margin-top: 1.5rem; }
+  .agent .desc { color: #555; margin: .25rem 0 0; }
+  .agent nav { margin: .75rem 0 0; font-size: .9rem; }
+  .agent nav a { margin-right: 1rem; }
+  .agent .leaves { margin-top: 1.25rem; }
+  .agent .leaves article { border-top: 1px solid #eee; padding-top: 1rem; margin-top: 1rem; }
+  .action { margin-top: 1.25rem; border: 1px solid #e5e5e5; border-radius: .5rem;
+            padding: 1rem 1.25rem; background: #fdfdfd; }
+  .action h4 { margin: 0 0 .25rem; font-size: 1.05rem; }
+  .action .desc { color: #555; margin: 0 0 .75rem; font-size: .95rem; }
+  .action [data-agent-fallback] p { margin: 0; }
+  .action form div { margin-bottom: .75rem; }
+  .action label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: .15rem; }
+  .action input, .action textarea { width: 100%; padding: .4rem .5rem;
+    border: 1px solid #ccc; border-radius: .375rem; font: inherit; }
+  .action input[type="checkbox"] { width: auto; }
+  .action small { display: block; color: #666; margin-top: .15rem; }
+  .action button { padding: .5rem 1rem; border: 0; border-radius: .375rem;
+    background: #0b5fff; color: #fff; font: inherit; cursor: pointer; }
+  .action button + button { margin-left: .5rem; background: #555; }
+  .action [data-field-errors] { color: #a30000; padding-left: 1.25rem; margin: .5rem 0; }
+  ul, ol { padding-left: 1.5rem; }
+  a { color: #0b5fff; }
+  blockquote { margin: .75rem 0; padding-left: 1rem; border-left: 3px solid #ddd; color: #555; }
+  code { background: #f0f0f0; padding: .1em .3em; border-radius: .25rem; font-size: .9em; }
+  footer { border-top: 1px solid #e5e5e5; padding: 1.5rem 1.25rem; color: #666;
+           font-size: .85rem; }</style>
+    <script type="application/json" id="agent-site-config">{"version":1,"ownerSlug":"prasadgrvs1","agents":[{"cardId":"ag_SyFBRVAjkNIUNGdCbn5rC6IdiVo","name":"Trattoria Aurora","mcpEndpoint":"https://agents.agentbag.ai/api/agent-web/card/ag_SyFBRVAjkNIUNGdCbn5rC6IdiVo/mcp","agentPageUrl":"https://agents.agentbag.ai/@prasadgrvs1/trattoria-aurora","cardViewUrl":"https://agentbag.ai/card?mcp=https%3A%2F%2Fagents.agentbag.ai%2Fapi%2Fagent-web%2Fcard%2Fag_SyFBRVAjkNIUNGdCbn5rC6IdiVo%2Fmcp","actions":[{"actionId":"request_table","label":"Request a table","description":"Ask the dining room to hold a table. Every request is confirmed by hand — a request is not a booking.","interaction":{"version":1,"payloadSchema":{"type":"object","properties":{"partySize":{"type":"integer","minimum":1,"maximum":8},"preferredDate":{"type":"string","format":"date","maxLength":10},"preferredTime":{"type":"string","maxLength":500},"occasion":{"type":"string","maxLength":500}},"required":["partySize","preferredDate","preferredTime"]},"actionRevision":"ar_21077a6abfc9b95cf7996bd4d51750bc76f81a1c","fields":[{"name":"partySize","type":"integer","required":true,"collect":"ask","min":1,"max":8,"tip":"How many guests?","sensitivity":"public","onViolation":"reject"},{"name":"preferredDate","type":"date","required":true,"collect":"ask","tip":"YYYY-MM-DD","sensitivity":"public","onViolation":"reject"},{"name":"preferredTime","type":"string","required":true,"collect":"ask","tip":"e.g. 19:30","sensitivity":"public","onViolation":"reject"},{"name":"occasion","type":"string","required":false,"collect":"ask","sensitivity":"public","onViolation":"reject"}],"strategy":"guided","requiresContact":true,"examples":["table for two on Friday","can I get a table for 4 tomorrow night"],"responseGuidance":{"onSubmit":"Grazie! Your request for {partySize} on {preferredDate} is with the dining room — they confirm every request by hand.","onApprove":"The dining room confirmed your table for {partySize} on {preferredDate} at {preferredTime}. See you soon!","onReject":"We could not fit that slot — the dining room will suggest an alternative.","tone":"warm"},"submission":{"submit":"indy_request_action","status":"indy_action_status","followup":"indy_action_send_followup","payloadArg":"payload","payloadAliases":["fields"],"submissionId":"accepted","actionRevision":"checked"}}}]}]}</script>
+    <script type="module" src="runtime/agent-web/client/site-boot.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <h1>@prasadgrvs1 — agents</h1>
+        
+      </div>
+    </header>
+    <main>
+    <section class="agent" data-agent="ag_SyFBRVAjkNIUNGdCbn5rC6IdiVo">
+      <h2>Trattoria Aurora</h2>
+      <p class="desc">Answer questions about Trattoria Aurora and take table requests.</p>
+      <nav><a href="https://agents.agentbag.ai/@prasadgrvs1/trattoria-aurora" rel="noopener">Agent page</a><a href="https://agentbag.ai/card?mcp=https%3A%2F%2Fagents.agentbag.ai%2Fapi%2Fagent-web%2Fcard%2Fag_SyFBRVAjkNIUNGdCbn5rC6IdiVo%2Fmcp" rel="noopener">Agent card</a><a href="https://wa.me/15105161382?text=start%20%40prasadgrvs1%2Ftrattoria-aurora" rel="noopener">WhatsApp</a><a href="https://t.me/agentbag_bot?start=cHJhc2FkZ3J2czEvdHJhdHRvcmlhLWF1cm9yYQ==" rel="noopener">Telegram</a></nav>
+      <div class="actions"><h3>Requests it accepts</h3>
+      <div class="action">
+        <h4>Request a table</h4>
+        <p class="desc">Ask the dining room to hold a table. Every request is confirmed by hand — a request is not a booking.</p>
+        <div data-agent-action data-card-id="ag_SyFBRVAjkNIUNGdCbn5rC6IdiVo" data-action-id="request_table">
+          <div data-agent-fallback><p><a href="https://agentbag.ai/card?mcp=https%3A%2F%2Fagents.agentbag.ai%2Fapi%2Fagent-web%2Fcard%2Fag_SyFBRVAjkNIUNGdCbn5rC6IdiVo%2Fmcp" rel="noopener">Send this request through the agent's card</a></p></div>
+        </div>
+      </div>
+      </div>
+      <section class="leaves"><h3>Overview</h3>
+      <article><h4>Menu</h4>
+<h4>Trattoria Aurora — Menu</h4>
+<p>## Starters<br>- Bruschetta al pomodoro — 8<br>- Burrata with heirloom tomatoes — 14<br>- Arancini (3pc, wild mushroom) — 11</p>
+<p>## Mains<br>- Tagliatelle al ragù (48-hr beef &amp; pork) — 22<br>- Margherita pizza, wood-fired — 16<br>- Risotto ai funghi — 21<br>- Branzino, grilled, salsa verde — 29</p>
+<p>## Desserts<br>- Tiramisù della casa — 9<br>- Panna cotta, seasonal fruit — 8</p>
+<p>All prices in USD. Corkage 25 per bottle.</p>
+      </article>
+      <article><h4>Hours &amp; Location</h4>
+<h4>Hours &amp; Location</h4>
+<p>Trattoria Aurora, 214 Columbus Ave, San Francisco, CA 94133.</p>
+<ul><li>Lunch: Tue–Fri 11:30–14:30</li><li>Dinner: Tue–Sun 17:30–22:30 (Fri–Sat until 23:00)</li><li>Closed Mondays.</li></ul>
+<p>## Getting here<br>- Muni: lines 8, 30, 45 (Columbus &amp; Vallejo stop)<br>- Parking: Vallejo St garage, 2h validated with dinner<br>- Wheelchair accessible entrance on Columbus Ave.</p>
+      </article>
+      <article><h4>Reservation Policy</h4>
+<h4>Reservation Policy</h4>
+<ul><li>Parties of 1–8 can request a table through this agent; the dining room confirms every request by hand.</li><li>A request is NOT a confirmed booking — Aurora replies within a few hours.</li><li>Parties of 9+ are private dining: ask for the events team instead.</li><li>48h notice appreciated for weekend dinners; same-day requests welcome on weekdays.</li><li>No deposit required under 8 guests. Cancellation is free up to 4h before the slot.</li></ul>
+      </article>
+      </section>
+    </section>
+    </main>
+    <footer>
+      <div class="inner">
+        Generated by AgentBag · agents by <a href="https://agents.agentbag.ai/@prasadgrvs1/agents" rel="noopener">@prasadgrvs1</a> · content verified 2026-09-29 ·
+        forms submit directly to each agent's own endpoint.
+      </div>
+    </footer>
+  </body>
+</html>
